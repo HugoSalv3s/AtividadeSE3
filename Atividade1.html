@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comissão de Funcionários</title>
+</head>
+<body>
+  
+    <h1>Calculo de vendas do funcionario</h1>
+
+
+<p>Nome do funcionário: <span id="Nomefuncionario"></span></p>
+<p>Quantidade de produtos vendidos: <span id="QuantidadeProduto"></span></p>
+<p>Total de comissão: <span id="TotalComissao "></span></p>
+
+<script>
+
+let nomefuncionario
+let quantidadeproduto
+let calculocomissao
+let totalcomisssao 
+let resultado
+
+nomefuncionario = prompt("Digite o nome do funcionário: ")
+quantidadeproduto = Number(prompt("Digite a quantidade de produtos vendidos"))
+
+if(quantidadeproduto <=250){
+   resultado = quantidadeproduto * 1.00
+}
+
+else{quantidadeproduto >=250
+
+resultado = quantidadeproduto * 1.50}
+
+if(quantidadeproduto >= 500){
+  resultado =  quantidadeproduto * 2.00
+}
+
+
+document. getElementById("Nomefuncionario") .innerHTML = nomefuncionario
+document. getElementById("QuantidadeProduto") .innerHTML = quantidadeproduto
+document. getElementById("TotalComissao") .innerHTML = resultado.toFixed(2)
+
+
+</script>
+
+</body>
+</html>
